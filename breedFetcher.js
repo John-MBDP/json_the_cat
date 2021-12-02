@@ -10,8 +10,8 @@ request(
       console.log("We have an error: ", error);
       return error;
     }
-    console.log(response);
-    // const data = JSON.parse(body);
-    // console.log(data[0].breeds[0]["life_span"]);
+    // console.log(data);
+    const data = JSON.parse(body);
+    console.log(data[0].breeds[0]);
   }
 );
